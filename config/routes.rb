@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  root 'application#hello'
-  config.hosts.clear
+  resources :microposts
+  resources :users
+  root 'users#index'
   end
   
